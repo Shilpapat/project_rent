@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo">
+
+    </p>
+    <script>
+//Arrow functions hre do not need function return keywords and curly brackets.
+      //const x = (x,y) =>x*y;
+//Function Rest Parameter(...)
+
+      function sum(...ar)
+      {
+        let summ=0;
+        for(let i of ar){
+             summ=summ+i;
+
+      }
+      return summ;
+      }
+      const x = sum(1,2,3,4,6);
+      document.getElementById("demo").innerHTML = " "+ x;
+      // function myfunction(a,b)
+      // {
+      //   return a*b;
+      // }
+      // const str = myfunction(4,3).toString();
+      // console.log(typeof(str))
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+       #container{
+         width:400px;
+         height:400px;
+         background-color: blue;
+         position:relative;
+       }
+       #animate{
+         width:100px;
+         height:100px;
+         background-color: red;
+         position: absolute;
+       }
+    </style>
+  </head>
+  <body>
+    <div id=container>
+      <div id="animate">
+
+      </div>
+    </div>
+    <button onclick="mymove()">Move</button>
+    <script>
+        function mymove()
+        {
+          let id=null;
+          const elem = document.getElementById("animate");
+          let pos=0;
+          clearInterval(id);
+          id=setInterval(frame,2);
+          function frame()
+          {
+            if(pos==300)
+            {
+              clearInterval(id);
+            }
+            else{
+              pos++;
+              elem.style.top = pos+"px";
+              elem.style.left = pos+"px";
+            }
+          }
+        }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>JavaScript Validation</h2>
+    <form>
+    <input id="num" /><br /><br />
+    Name <input type="text" name="fname" required>
+    <input type="submit"/>
+    <br /><br />
+    </form> -->
+    <!-- <button type="button" onclick="myfunction()">Submit</button>
+    <p id="demo"> -->
+
+    <!-- </p>
+    <script>
+      function myfunction()
+      {
+         let  x = document.getElementById("num").value;
+         let text;
+         if(isNaN(x) || x<0 || x>10)
+         {
+           text = "input is invalid"
+         }
+         else {
+           text="Valid input"
+         }
+         document.getElementById("demo").innerHTML = text;
+      }
+    </script> -->
+  <!-- </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Shilpa Dattajirao Patil</h1>
+    <img id="myImage" src="https://img.freepik.com/free-photo/abstract-backdrop-illustration-with-multi-colored-design-shapes-generated-by-ai_188544-15582.jpg" />
+    <button onclick="myfunction()">Click Me to change the image</button>
+    <a href="">shilpa</a>
+    <div id="main">
+      <p>
+        Finding HTML Elements by Tag Name
+      </p>
+      <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    </div>
+    <p id="demo"></p> -->
+    <!--<script>
+     //   document.getElementById("demo").innerHTML = "Today's Date is "+Date()
+     //   document.write(Date())
+     //   function myfunction(){
+     //   document.getElementById("myImage").src="https://t3.ftcdn.net/jpg/01/86/46/78/360_F_186467829_n3JOUixZP39I3A7QCnDL07EAT0NAqMpT.jpg";
+     // }
+      // const cars = ["BMW","Audi","VOLVO","Ford","Fiat","Saab"]
+      // let i,text,len;
+      // for( i=0, text="", len=cars.length;i<len;i++)
+      // {
+      //   text +=cars[i]+"<br />";
+      // }
+// for In loop over objects
+      // const person={name:"shilpa",middlename:"Dattajirao",surname:"Patil"};
+      // let text=""
+      // for(let key in person)
+      // {
+      //   text += person[key]+" ";
+      // }
+// for In loop over arrays
+      // const numbers = [1,2,3,4,5]
+      // console.log(typeof(numbers))
+      // let text=""
+      // let index=0
+      // numbers.forEach(myfunction);
+      // function myfunction(value){
+      //   text += value+"   ";
+      //   index++;
+      // }
+// for of over iterable object like Arrays,Strings,Maps,NodeLists :=
+      // let language = "Javascript is my favirate subject"
+      // let text = ""
+      // for(let x of language)
+      // {
+      //   text += x;
+      // }
+// The Break Statement in for loop
+      // let text =""
+      // for(let i=0;i<10;i++)
+      // {
+      //   if(i === 3){
+      //     break;
+      //   }
+      //   text += "The number is " + i + "<br />"
+      // }
+      // document.getElementById("demo").innerHTML=text;
+// The switch Statement
+      // let day;
+      // console.log(new Date())
+      // switch(new Date().getDay())
+      // {
+      //   case 1 :
+      //   day = "Monday"
+      //   break;
+      //   case 2 :
+      //   day = "Tuesday"
+      //   break;
+      // }
+      // document.getElementById("demo").innerHTML = "Today is "+day
+      // console.log(document.getElementsByTagName("a"))
+//The getElementsByTagName DOM object
+
+      // for(let x in numbers)
+      // {
+      //   text += numbers[x]*2;
+      // }
+      // window.print();
+    //   const x = document.getElementById("main")
+    //   const y = x.getElementsByTagName("p")
+    //   console.log(y)
+    //   console.log(x)
+    //   document.getElementById("demo").innerHTML="The first element content is : <br />"+y[0].innerHTML+"<br />The second element content is : <br />"+y[1].innerHTML;
+    // </script>
+  </body>
+</html> -->
